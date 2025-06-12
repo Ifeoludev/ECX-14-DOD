@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cat Photo App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cat Photo App</h1>
+      <nav>
+        <ul>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">What do cats hate</a></li>
+          <li><a href="#contact">About Cat Questions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="gallery">
+        <h2>Cat Gallery</h2>
+        <img src="cat1.jpg" alt="A cute kitten" />
+        <p>Cats are adorable!</p>
+      </section>
+
+      <section id="about-cats">
+        <h2>About Cats</h2>
+        <article>
+          <h3>Why Cats Are Awesome</h3>
+          <p>
+            Cats are playful, curious, and make great companions. They love to
+            nap, purr, and chase laser pointers.
+          </p>
+          <img src="cat4.jpg" alt="cat-playing" />
+          <p>Cats love to play</p>
+        </article>
+      </section>
+
+      <section id="cats-hate">
+        <h1>What do cats hate?</h1>
+        <nav>
+          <ul>
+            <li>Water</li>
+            <li>Car rides</li>
+            <li>Coffee</li>
+          </ul>
+
+          <img src="cat3.jpg" alt="Cat hates water" id="cat-hate-water" />
+          <p>Cats hate water</p>
+        </nav>
+      </section>
+
+      <section id="contact">
+        <h2>About Cat Questions</h2>
+
+        <form action="/submit-cat-photo">
+          <fieldset>
+            <legend>Does your cat bite?</legend>
+            <label
+              ><input type="radio" name="yes-no" value="Yes" checked />
+              Yes</label
+            >
+            <label><input type="radio" name="yes-no" value="No" /> No</label>
+          </fieldset>
+
+          <fieldset id="behaviour-fieldset">
+            <legend>How does your cat behave?</legend>
+            <label
+              ><input
+                type="checkbox"
+                name="personality"
+                value="loving"
+                checked
+              />
+              Loving</label
+            >
+            <label
+              ><input type="checkbox" name="personality" value="loud" />
+              Loud</label
+            >
+            <label
+              ><input type="checkbox" name="personality" value="disturbing" />
+              Disturbing</label
+            >
+          </fieldset>
+
+          <input
+            id="cat-url"
+            type="text"
+            placeholder="cat photo URL"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Cat Photo App. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
